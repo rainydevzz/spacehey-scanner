@@ -30,8 +30,9 @@ def get_links():
                 a = r.lower().find(w)
                 if a != -1:
                     print(i)
+                    print(w)
                     with open('cool.txt', 'a') as f:
-                        f.write(f'https://spacehey.com{i}\n')
+                        f.write(f'https://spacehey.com{i}\n - {w}')
                     break
             print("keywords not found! next...")
         p += 1
