@@ -15,21 +15,21 @@ def get_links():
         links = []
         r = requests.get(f'https://spacehey.com/browse?page={p}')
         soup = bs4.BeautifulSoup(r.text, "html.parser")
-        res = soup.find("div", class_="inner").find_all("a")
+        results = soup.find("div", class_="inner").find_all("a")
 
         # checks for all profile links from the extracted page
-        for i in res:
-            if "profile?id" in i["href"]:
-                links.append(i["href"])
+        for res in results:
+            if "profile?id" in res["href"]:
+                links.append(res["href"])
 
         # checks for keywords on each page, and if present, writes the profile link to a file
-        for i in links:
+        for link in links:
             time.sleep(5)
             r = requests.get(f'https://spacehey.com{i}').text
             for w in words:
-                a = r.lower().find(w)
-                if a != -1:
-                    print(i)
+                found = r.lower().find(w)
+                if found != -1:
+                    print(link)
                     print(w)
                     with open('cool.txt', 'a') as f:
                         f.write(f'https://spacehey.com{i}\n - {w}')
