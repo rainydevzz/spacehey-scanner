@@ -32,7 +32,7 @@ def get_links():
                     print(link)
                     print(w)
                     with open('cool.txt', 'a') as f:
-                        f.write(f'https://spacehey.com{link}\n - {w}')
+                        f.write(f'https://spacehey.com{link} - {w}\n')
                     break
             print("keywords not found! next...")
         p += 1
