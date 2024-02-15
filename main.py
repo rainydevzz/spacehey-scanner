@@ -25,14 +25,14 @@ def get_links():
         # checks for keywords on each page, and if present, writes the profile link to a file
         for link in links:
             time.sleep(5)
-            r = requests.get(f'https://spacehey.com{i}').text
+            r = requests.get(f'https://spacehey.com{link}').text
             for w in words:
                 found = r.lower().find(w)
                 if found != -1:
                     print(link)
                     print(w)
                     with open('cool.txt', 'a') as f:
-                        f.write(f'https://spacehey.com{i}\n - {w}')
+                        f.write(f'https://spacehey.com{link}\n - {w}')
                     break
             print("keywords not found! next...")
         p += 1
