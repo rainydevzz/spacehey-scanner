@@ -41,3 +41,5 @@ I am unable to test the program on these OSs, however if you can verify they wor
 ### Conclusion
 
 Thanks for reading! Star the repo if you found it helpful, and for support or questions, open an issue or contact me on [spacehey](https://spacehey.com/rainyboyo), Discord @ rainy.boyo or on Matrix @ rainy:chat.rainys.pet
+
+If you'd like to improve this program, feel free to fork and/or open a PR, or just make changes locally. Suggestions are also welcome via issue or contacting me directly.
