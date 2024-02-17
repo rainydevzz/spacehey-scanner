@@ -32,8 +32,8 @@ def get_links():
                     print(link)
                     print(w)
                     with open('cool.txt', 'r') as f:
-                        if link in f:
-                            continue
+                        if link in f.read():
+                            break
                     with open('cool.txt', 'a') as f:
                         f.write(f'https://spacehey.com{link} - {w}\n')
                     break
