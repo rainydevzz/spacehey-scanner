@@ -12,15 +12,14 @@ You will need to install the Python Programming Language. You can find downloads
 
 Download this repo. You can just download the zip file [here](https://github.com/rainydevzz/spacehey-scanner/archive/refs/heads/main.zip) and extract it or download [git](https://git-scm.com/downloads) and clone it, which can be done by running `git clone https://github.com/rainydevzz/spacehey-scanner.git` in the command line.
 
-Once you have the folder ready for use, look for the 'example.env' file and change it to your liking. **Be sure to separate each keyphrase with a comma then a space.**
+Once the folder is ready, navigate to it with file explorer then right-click, then click "Open In Terminal". Type the following commands:
 
-Now, rename the file to .env
+```
+pip install -r requirements.txt
+python main.py
+```
 
-This step may not be needed but make a file called cool.txt in the folder.
-
-Install the needed dependencies. Open the terminal and type "pip install -r requirements.txt"
-
-Finally, in the folder, open the terminal and type "python main.py" and run it, which can be done by navigating to the folder in File Explorer, right clicking and selecting "Open In Terminal". If the file is empty for awhile, this is normal. Try adding more keywords or just wait. Note that you must restart the script if you make a change to the .env file.
+To edit the keywords, select "edit .env" using the arrow keys and follow the instructions. After you're done you will be sent back to the menu where you can select "run scanner".
 
 If you'd like to quickly check the contents of the text file in the terminal, type `type cool.txt`.
 
