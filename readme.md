@@ -1,5 +1,7 @@
 # spacehey-scanner
 
+**This repository has been archived as a part of my partial migration to Codeberg. As far as I know, it is still functional, but no further updates will be received to this repository. Any further development will happen on my [Codeberg](https://codeberg.org/rainy)
+
 A webscraping tool for SpaceHey that helps you find profiles via keywords.
 
 **How it works:** The scraper will go through "Online Users" pages and gather profile links. It will then parse each profile and if it contains one of your keywords, its link is written to a text file.
