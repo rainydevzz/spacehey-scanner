@@ -1,6 +1,6 @@
 # spacehey-scanner
 
-**This repository has been archived as a part of my partial migration to Codeberg. As far as I know, it is still functional, but no further updates will be received to this repository. Any further development will happen on my [Codeberg](https://codeberg.org/rainy)
+**This repository has been archived as a part of my partial migration to Codeberg. As far as I know, it is still functional, but no further updates will be received to this repository. Any further development will happen on my [Codeberg](https://codeberg.org/rainy)**
 
 A webscraping tool for SpaceHey that helps you find profiles via keywords.
 
